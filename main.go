@@ -485,7 +485,7 @@ func (c *concordiumCollector) fetchAPI() (metricsData, error) {
 			for i := 0; i < len(bakerStatus.Bakers); i++ {
 				if bakerStatus.Bakers[i].BakerID == data.BakerId {
 					data.BakerLotteryPower = bakerStatus.Bakers[i].BakerLotteryPower
-					data.EstimatedBakingBlock = data.BakerLotteryPower * 8640
+					data.EstimatedBakingBlock = data.BakerLotteryPower * 35000
 				}
 			}
 		}
